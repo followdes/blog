@@ -1,6 +1,9 @@
 <div class="container">
-  <h1>All articles</h1>
-  <h4><%= link_to "Новый пост", new_article_path %></h4>
+ <div class="panel panel-default posts">
+  <blockquote><h1>Посты</h1>
+  <cite title="Source Title"><div class="button-home"><h4><%= link_to "Новый пост", new_article_path, class: "btn btn-default btn-lg" %></h4></div></cite>
+  </blockquote>
+  </div>
  <div class="text-center">
   <%= will_paginate @articles %>
  </div>
